@@ -6,7 +6,7 @@ import bitsandbytes, flash_attn
 
 def calculate_block_influence(model, inputs):
     """
-    Function then iterates over the hidden states, comparing each state with the next state using a formula that calculates the cosine similarity between the states. 
+    Function iterates over the hidden states, comparing each state with the next state using a formula that calculates the cosine similarity between the states. 
     Higher values indicate a greater influence of the previous layer on the current layer.
     Function returns a list of scores.
     """
